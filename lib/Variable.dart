@@ -1,11 +1,12 @@
 //SOCIAL MEDIA LINKS
 
 const String MAIL_ID = "gbdvfranco@gmail.com";
-const String LINKEDLN_URL = "https://www.linkedin.com/in/iamsouviki";
-const String GITHUB_URL = "https://github.com/iamsouviki";
-const String TWITTER_URL = "https://twitter.com/iamsouviki";
-const String INSTAGRAM_URL = "https://www.instagram.com/iamsouviki";
-const String FACEBOOK_URL = "https://fb.com/iamsouviki";
+const String LINKEDLN_URL =
+    "https://www.linkedin.com/in/gabriel-franco-s%C3%A1nchez-085bb064";
+const String GITHUB_URL = "https://gitlab.com/gfrancos";
+const String TWITTER_URL = "https://twitter.com/GaboFranco1";
+const String INSTAGRAM_URL = "https://www.instagram.com/aslangabo";
+const String FACEBOOK_URL = "https://www.facebook.com/aslangabo";
 
 //INTRODUCTION PAGE VARIABLE
 const String NAME = "Gabriel Franco Sánchez";
