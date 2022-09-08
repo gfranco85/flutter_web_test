@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import '../../Variable.dart';
 
 class MobileAppBar extends StatefulWidget {
+  const MobileAppBar({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _MobileAppBarState createState() => _MobileAppBarState();
 }
 
@@ -16,11 +19,11 @@ class _MobileAppBarState extends State<MobileAppBar> {
       shadowColor: Colors.transparent,
       actions: [
         Container(
-          padding: EdgeInsets.only(right: 13),
+          padding: const EdgeInsets.only(right: 13),
           child: Row(
             children: [
               Container(
-                padding: EdgeInsets.only(right: 8),
+                padding: const EdgeInsets.only(right: 8),
                 child: Transform.rotate(
                   angle: 0,
                   child: FittedBox(
@@ -31,7 +34,7 @@ class _MobileAppBarState extends State<MobileAppBar> {
                         shape: BoxShape.circle,
                         color: Colors.black26,
                         border: Border.all(color: Colors.white38, width: 1),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage(IMAGE_PATH),
                         ),
@@ -40,8 +43,8 @@ class _MobileAppBarState extends State<MobileAppBar> {
                   ),
                 ),
               ),
-              Text(
-                "Souvik",
+              const Text(
+                "Gabriel",
                 style: TextStyle(color: Colors.white),
               ),
             ],

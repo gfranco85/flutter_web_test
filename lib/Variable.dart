@@ -1,6 +1,6 @@
 //SOCIAL MEDIA LINKS
 
-const String MAIL_ID = "souvikghosh687@gmail.com";
+const String MAIL_ID = "gbdvfranco@gmail.com";
 const String LINKEDLN_URL = "https://www.linkedin.com/in/iamsouviki";
 const String GITHUB_URL = "https://github.com/iamsouviki";
 const String TWITTER_URL = "https://twitter.com/iamsouviki";
@@ -29,8 +29,8 @@ const String WHO_AM_I =
 
 //EDUCATION
 const String DEGREE =
-    "Bachelor of Technology in Computer Science & Engineering ( 2017-2021 ) ";
-const String COLLEGE_NAME = "Saroj Mohan Institute Of Technology";
+    "Bachelor of Technology in Computer Science & Engineering ( 2008-2014 ) ";
+const String COLLEGE_NAME = "Escuela Superior Politecnica del Litoral";
 const String CGPA = "DGPA :- 8.22";
 
 const String TWELVETH_SCHOOL = "KATWA BHARATI BHABAN";
