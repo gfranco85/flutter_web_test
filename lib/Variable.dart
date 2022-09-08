@@ -30,15 +30,15 @@ const String WHO_AM_I =
 
 //EDUCATION
 const String DEGREE =
-    "Bachelor of Technology in Computer Science & Engineering ( 2008-2014 ) ";
+    "Engineering in Computer Science & Engineering ( 2009-2013 ) ";
 const String COLLEGE_NAME = "Escuela Superior Politecnica del Litoral";
 const String CGPA = "DGPA :- 8.22";
 
-const String TWELVETH_SCHOOL = "KATWA BHARATI BHABAN";
+const String TWELVETH_SCHOOL = "Albohispano High School";
 const String TWELVETH_PERCENTAGE = "Percentage :- 73.6";
 
-const String TENTH_SCHOOL = "PURULIA MAHENDRA VIDYAPITH";
-const String TENTH_PERCENTAGE = "Percentage :- 85.71";
+const String TENTH_SCHOOL = "";
+const String TENTH_PERCENTAGE = "";
 
 //SKILLS
 const Skills = [
@@ -57,23 +57,23 @@ const Skills = [
 const Experiences = [
   {
     "CompanyLogoPath": 'assets/images/tcslogo.jpeg',
-    "CompanyName": "Tata Consultancy Services(TCS)",
-    "WorkDescription": "Assistant System Engineer",
-    "WorkDetails": "Work as a Reactjs and Nextjs Developer",
-    "WorkDuration": "Oct 1,2021 - Present",
+    "CompanyName": "Maint S.A",
+    "WorkDescription": "Software Developer",
+    "WorkDetails": "Work as a Fullstack Developer",
+    "WorkDuration": "Jan 25,2020 - Present",
   },
   {
     "CompanyLogoPath": 'assets/images/qworkzLOGO.jpeg',
-    "CompanyName": "Qworkz Technology Solutions",
+    "CompanyName": "Reybanano del Pacifico",
     "WorkDescription": "Mobile Application Developer(Intern + Full Time)",
-    "WorkDuration": "May,2021 - Sep,2021",
-    "WorkDetails": "Work as a Flutter Frontend Developer",
+    "WorkDuration": "Ag,2014 - Jan,2020",
+    "WorkDetails": "Work as a TI Developer",
   },
   {
     "CompanyLogoPath": 'assets/images/digitalgriendlogo.png',
-    "CompanyName": "Digital Friend",
-    "WorkDescription": "Flutter Developer(Intern)",
-    "WorkDuration": "Apr,2021 - Sep,2021",
-    "WorkDetails": "Work as a Flutter , Springboot and NodeJs Developer",
+    "CompanyName": "E-tech",
+    "WorkDescription": "Developer(Intern)",
+    "WorkDuration": "Apr,2010 - Sep,2014",
+    "WorkDetails": "Work as a Springboot and NodeJs Developer",
   }
 ];

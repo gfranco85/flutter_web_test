@@ -139,13 +139,13 @@ class _IntroDuctionAnimationTextAdapterState
                       color: Colors.white38,
                     ),
                     child: TextButton(
-                      child: Text(
+                      child: const Text(
                         "    Resume    ",
                         style: TextStyle(color: Colors.black, fontSize: 15),
                       ),
                       onPressed: () {
                         launch(
-                            "https://drive.google.com/file/d/1VoUkdWeccwntgGrs-tFTj8VNGqpQmYPl/view?usp=sharing");
+                            "https://docs.google.com/document/d/0BxULScNDEAwfRnI4dC1GZnROQVVjel9jTlVuMEpmNXRmcXRj/edit?usp=sharing&ouid=113908384930778325018&resourcekey=0-SBX_dkjMRzmmco9s1DOSUQ&rtpof=true&sd=true");
                       },
                     ),
                   );
