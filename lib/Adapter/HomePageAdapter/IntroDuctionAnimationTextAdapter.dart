@@ -85,7 +85,7 @@ class _IntroDuctionAnimationTextAdapterState
                         TypewriterAnimatedText(
                           PROFESSION_DETAILS,
                           textStyle: TextStyle(
-                            color: Colors.blueGrey[900],
+                            color: Colors.blueGrey[700],
                             fontSize: 20,
                             fontWeight: FontWeight.w500,
                           ),
@@ -112,7 +112,7 @@ class _IntroDuctionAnimationTextAdapterState
                           MORE_DETAILS_INTRODUCTION,
                           speed: Duration(milliseconds: 10),
                           textStyle: TextStyle(
-                            color: Colors.grey,
+                            color: Colors.white,
                             fontSize: 16,
                             letterSpacing: 1.2,
                             height: 1.3,
@@ -167,7 +167,7 @@ class _IntroDuctionAnimationTextAdapterState
                         TypewriterAnimatedText(
                           "Design & Build by Gabriel with ❤ Flutter",
                           textStyle: const TextStyle(
-                            color: Colors.grey,
+                            color: Colors.blueGrey,
                             fontSize: 10,
                             letterSpacing: 1.2,
                             height: 1.3,

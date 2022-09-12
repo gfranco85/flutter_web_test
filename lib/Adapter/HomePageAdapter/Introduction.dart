@@ -65,7 +65,7 @@ class _IntroductionState extends State<Introduction> {
                             shape: BoxShape.circle,
                             color: backgroundColor,
                             border: Border.all(color: borderColor, width: 2),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               fit: BoxFit.cover,
                               image: AssetImage(IMAGE_PATH),
                             ),
@@ -74,7 +74,7 @@ class _IntroductionState extends State<Introduction> {
                       ),
                     ),
                   ),
-                  IntroDuctionAnimationTextAdapter()
+                  const IntroDuctionAnimationTextAdapter()
                 ],
               ));
   }
