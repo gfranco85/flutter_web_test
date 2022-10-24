@@ -6,6 +6,7 @@ import 'package:flutter_web_test/Adapter/AppbarAdapter/OtherDeviceAppBar.dart';
 import 'package:flutter_web_test/Adapter/ExperienceAdapter/ExperienceAdapter.dart';
 import 'package:flutter_web_test/Adapter/MobileDrawerAdapter/MobileDrawer.dart';
 import 'package:flutter_web_test/Variable.dart';
+import 'package:day_night_switcher/day_night_switcher.dart';
 
 class Experience extends StatefulWidget {
   @override
@@ -17,6 +18,14 @@ class _ExperienceState extends State<Experience> {
   Future count(int n) async {
     return Future.delayed(Duration(seconds: n));
   }
+
+  void onStateChanged(bool isDarkModeEnabled) {
+    setState(() {
+      this.isDarkModeEnabled = isDarkModeEnabled;
+    });
+  }
+
+  bool isDarkModeEnabled = false;
 
   List<Widget> getExperiences() {
     List<Widget> experiences = [];
@@ -60,7 +69,8 @@ class _ExperienceState extends State<Experience> {
         preferredSize: Size.fromHeight(60),
         child: width < 600 ? MobileAppBar() : OtherDeviceAppBar(),
       ),
-      backgroundColor: Colors.black,
+      //backgroundColor: Colors.black,
+      backgroundColor: isDarkModeEnabled ? Colors.black : Colors.lightBlue[300],
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: SingleChildScrollView(
@@ -71,6 +81,21 @@ class _ExperienceState extends State<Experience> {
             width: width,
             child: ListView(
               children: [
+                Row(
+                  children: [
+                    Flexible(
+                      flex: 1,
+                      child: DayNightSwitcher(
+                        isDarkModeEnabled: isDarkModeEnabled,
+                        onStateChanged: (isDarkModeEnabled) {
+                          setState(() {
+                            this.isDarkModeEnabled = isDarkModeEnabled;
+                          });
+                        },
+                      ),
+                    ),
+                  ],
+                ),
                 Center(
                     child: Container(
                   child: AnimatedTextKit(

@@ -55,14 +55,6 @@ class _HomeState extends State<Home> {
               children: [
                 Row(
                   children: [
-                    Flexible(flex: 1, child: SocialAccounts()),
-                    Flexible(
-                      flex: 10,
-                      child: Container(
-                        padding: EdgeInsets.all(15),
-                        child: Introduction(),
-                      ),
-                    ),
                     Flexible(
                       flex: 1,
                       child: DayNightSwitcher(
@@ -72,6 +64,18 @@ class _HomeState extends State<Home> {
                             this.isDarkModeEnabled = isDarkModeEnabled;
                           });
                         },
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Flexible(flex: 1, child: SocialAccounts()),
+                    Flexible(
+                      flex: 10,
+                      child: Container(
+                        padding: EdgeInsets.all(15),
+                        child: Introduction(),
                       ),
                     ),
                   ],

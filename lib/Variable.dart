@@ -22,11 +22,11 @@ const String IMAGE_PATH = 'assets/images/souvikimagepassport.jpg';
 
 //ABOUT ME SECTION
 const String WHO_AM_I =
-    "Hello! I'm Gabriel Franco , a Computer Science Graduate, Flutter developer Developer and Assistant System Engineer in Tata Consultancy Services(TCS).\n"
+    "Hello! I'm Gabriel Franco , a Computer Science Graduate, Software Developer in Maint S.A.\n"
     'I love to create performant and interesting stuff that are benificial to the community. I enjoy learning and exploring new areas in the technologies. \nIn my opinion,'
     'getting your hands dirty is the best way to learn a new skill.\n'
-    'My area of interest are Cross Platform Application Development , Android Application Development and Full Stack Development\n'
-    'Beside Programming, I love playing cricket and watching cricket matches with a mug full of coffee.';
+    'My area of interest are Cross Platform Application Development , Web Application Development and Full Stack Development\n'
+    'Beside Programming, I love playing Basket and watching soccer matches with a mug full of coffee.';
 
 //EDUCATION
 const String DEGREE =
@@ -46,26 +46,26 @@ const Skills = [
   "ReactJs",
   "Flutter",
   "Android",
-  "NextJs",
+  "ExpressJS",
   "PYTHON ( Programming )",
   "Git",
-  "Springboot",
-  "Azure Cosmosdb"
+  "Node RED",
+  "Mysql"
 ];
 
 //Experiences
 const Experiences = [
   {
-    "CompanyLogoPath": 'assets/images/tcslogo.jpeg',
+    "CompanyLogoPath": 'assets/images/maint.jpg',
     "CompanyName": "Maint S.A",
     "WorkDescription": "Software Developer",
     "WorkDetails": "Work as a Fullstack Developer",
     "WorkDuration": "Jan 25,2020 - Present",
   },
   {
-    "CompanyLogoPath": 'assets/images/qworkzLOGO.jpeg',
+    "CompanyLogoPath": 'assets/images/rbp.jpg',
     "CompanyName": "Reybanano del Pacifico",
-    "WorkDescription": "Mobile Application Developer(Intern + Full Time)",
+    "WorkDescription": "Web Application Developer(Intern + Full Time)",
     "WorkDuration": "Ag,2014 - Jan,2020",
     "WorkDetails": "Work as a TI Developer",
   },

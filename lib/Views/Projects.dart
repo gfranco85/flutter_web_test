@@ -4,6 +4,7 @@ import 'package:flutter_web_test/Adapter/AppbarAdapter/MobileAppBar.dart';
 import 'package:flutter_web_test/Adapter/AppbarAdapter/OtherDeviceAppBar.dart';
 import 'package:flutter_web_test/Adapter/MobileDrawerAdapter/MobileDrawer.dart';
 import 'package:flutter_web_test/Adapter/ProjectsAdapter/ProjectsAdapter.dart';
+import 'package:day_night_switcher/day_night_switcher.dart';
 
 class Projects extends StatefulWidget {
   @override
@@ -15,6 +16,14 @@ class _ProjectsState extends State<Projects> {
   Future count(int n) async {
     return Future.delayed(Duration(seconds: n));
   }
+
+  void onStateChanged(bool isDarkModeEnabled) {
+    setState(() {
+      this.isDarkModeEnabled = isDarkModeEnabled;
+    });
+  }
+
+  bool isDarkModeEnabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +39,8 @@ class _ProjectsState extends State<Projects> {
         preferredSize: Size.fromHeight(60),
         child: width < 600 ? MobileAppBar() : OtherDeviceAppBar(),
       ),
-      backgroundColor: Colors.black,
+      //backgroundColor: Colors.black,
+      backgroundColor: isDarkModeEnabled ? Colors.black : Colors.lightBlue[300],
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: SingleChildScrollView(
@@ -41,6 +51,21 @@ class _ProjectsState extends State<Projects> {
             width: width,
             child: ListView(
               children: [
+                Row(
+                  children: [
+                    Flexible(
+                      flex: 1,
+                      child: DayNightSwitcher(
+                        isDarkModeEnabled: isDarkModeEnabled,
+                        onStateChanged: (isDarkModeEnabled) {
+                          setState(() {
+                            this.isDarkModeEnabled = isDarkModeEnabled;
+                          });
+                        },
+                      ),
+                    ),
+                  ],
+                ),
                 Center(
                     child: Container(
                   child: AnimatedTextKit(
@@ -66,13 +91,16 @@ class _ProjectsState extends State<Projects> {
                         return ProjectAdapter(
                           ProjectName: "Read Write & Share",
                           ProjectLogoPath: 'assets/images/iv.png',
-                          ProjectDescription: "'RWS' or 'Read Write & Share' is an Android application .\nOne can use it as a code editor (c,c++,java,python) and sharing purpose",
-                          ProjectDescriptionForMobile: "'RWS' or 'Read Write & Share' is an Android application .\nOne can use it as a code editor (c,c++,java,python) and sharing purpose",
+                          ProjectDescription:
+                              "'RWS' or 'Read Write & Share' is an Android application .\nOne can use it as a code editor (c,c++,java,python) and sharing purpose",
+                          ProjectDescriptionForMobile:
+                              "'RWS' or 'Read Write & Share' is an Android application .\nOne can use it as a code editor (c,c++,java,python) and sharing purpose",
                           FirstTechnology: 'ANDROID ',
                           SecondTechnology: ' , JAVA ',
                           ThirdTechnology: ' , XML ',
                           ForthTechnology: ' , REST API (Retrofit)',
-                          ProjectUrl: "https://github.com/iamsouviki/Read-Write-and-Share",
+                          ProjectUrl:
+                              "https://github.com/iamsouviki/Read-Write-and-Share",
                         );
                       }
                       return Container();
@@ -87,13 +115,17 @@ class _ProjectsState extends State<Projects> {
                         return ProjectAdapter(
                           ProjectName: "Tic Tac Toe",
                           ProjectLogoPath: '',
-                          ProjectDescription: "'Tic Tac Toe' is a flutter application using BackTracking MinMax Algorithm .\n Here We can play with computer as well as human .",
-                          ProjectDescriptionForMobile: "'Tic Tac Toe' is a flutter application using BackTracking MinMax Algorithm .\n Here We can play with computer as well as human .",
+                          ProjectDescription:
+                              "'Tic Tac Toe' is a flutter application using BackTracking MinMax Algorithm .\n Here We can play with computer as well as human .",
+                          ProjectDescriptionForMobile:
+                              "'Tic Tac Toe' is a flutter application using BackTracking MinMax Algorithm .\n Here We can play with computer as well as human .",
                           FirstTechnology: ' Flutter ',
-                          SecondTechnology: ' , Algorithm (BackTrcking Minmax) ',
+                          SecondTechnology:
+                              ' , Algorithm (BackTrcking Minmax) ',
                           ThirdTechnology: ' , Dart',
                           ForthTechnology: ' , Github  , Firebase',
-                          ProjectUrl: "https://github.com/iamsouviki/tictactoe_game",
+                          ProjectUrl:
+                              "https://github.com/iamsouviki/tictactoe_game",
                         );
                       }
                       return Container();
@@ -108,13 +140,16 @@ class _ProjectsState extends State<Projects> {
                         return ProjectAdapter(
                           ProjectName: "My Portfolio",
                           ProjectLogoPath: '',
-                          ProjectDescription: "'My Portfolio' is a flutter web application . Its just a web resume",
-                          ProjectDescriptionForMobile: "'My Portfolio' is a flutter web application .\nIts just a web resume",
+                          ProjectDescription:
+                              "'My Portfolio' is a flutter web application . Its just a web resume",
+                          ProjectDescriptionForMobile:
+                              "'My Portfolio' is a flutter web application .\nIts just a web resume",
                           FirstTechnology: 'FLUTTER ',
                           SecondTechnology: ', DART ',
                           ThirdTechnology: ', FIREBASE ',
                           ForthTechnology: ', GITHUB',
-                          ProjectUrl: "https://github.com/iamsouviki/souvikportfolio",
+                          ProjectUrl:
+                              "https://github.com/iamsouviki/souvikportfolio",
                         );
                       }
                       return Container();
@@ -129,18 +164,23 @@ class _ProjectsState extends State<Projects> {
                         return ProjectAdapter(
                           ProjectName: "Expense Manager",
                           ProjectLogoPath: '',
-                          ProjectDescription: "'Expense Manager' is a Python GUI tikinter Based application , \nwhich is developed to keep tracking on daily expenses and as well as we can save money for predefine expenses\n which will help for future investment . ",
-                          ProjectDescriptionForMobile: "'Expense Manager' is a Python GUI tikinter Based application , \nwhich is developed to keep tracking on daily expenses and \nas well as we can save money for predefine expenses\n which will help for future investment .",
+                          ProjectDescription:
+                              "'Expense Manager' is a Python GUI tikinter Based application , \nwhich is developed to keep tracking on daily expenses and as well as we can save money for predefine expenses\n which will help for future investment . ",
+                          ProjectDescriptionForMobile:
+                              "'Expense Manager' is a Python GUI tikinter Based application , \nwhich is developed to keep tracking on daily expenses and \nas well as we can save money for predefine expenses\n which will help for future investment .",
                           FirstTechnology: '',
                           SecondTechnology: 'PYTHON',
                           ThirdTechnology: ' , SQLite',
                           ForthTechnology: '',
-                          ProjectUrl: "https://github.com/iamsouviki/ExpenseManager",
+                          ProjectUrl:
+                              "https://github.com/iamsouviki/ExpenseManager",
                         );
                       }
                       return Container();
                     }),
-                SizedBox(height: 70,)
+                SizedBox(
+                  height: 70,
+                )
               ],
             ),
           ),
