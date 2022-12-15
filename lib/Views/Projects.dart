@@ -89,18 +89,18 @@ class _ProjectsState extends State<Projects> {
                     builder: (context, snapshot) {
                       if (snapshot.connectionState == ConnectionState.done) {
                         return ProjectAdapter(
-                          ProjectName: "Read Write & Share",
-                          ProjectLogoPath: 'assets/images/iv.png',
+                          ProjectName: "Flutter List View",
+                          ProjectLogoPath: 'assets/images/flutterList.png',
                           ProjectDescription:
-                              "'RWS' or 'Read Write & Share' is an Android application .\nOne can use it as a code editor (c,c++,java,python) and sharing purpose",
+                              "People list and api consumption in Flutter web and mobile. \nOne can use it as a code editor (Dart,c++,html,) and sharing purpose",
                           ProjectDescriptionForMobile:
-                              "'RWS' or 'Read Write & Share' is an Android application .\nOne can use it as a code editor (c,c++,java,python) and sharing purpose",
-                          FirstTechnology: 'ANDROID ',
-                          SecondTechnology: ' , JAVA ',
-                          ThirdTechnology: ' , XML ',
-                          ForthTechnology: ' , REST API (Retrofit)',
+                              "People list and api consumption in Flutter web and mobile. \nOne can use it as a code editor (Dart,c++,html,) and sharing purpose",
+                          FirstTechnology: 'FLUTTER ',
+                          SecondTechnology: ' , C++ ',
+                          ThirdTechnology: ' , HTML ',
+                          ForthTechnology: ' , REST API',
                           ProjectUrl:
-                              "https://github.com/iamsouviki/Read-Write-and-Share",
+                              "https://gitlab.com/gfrancos/flutter-list-view",
                         );
                       }
                       return Container();
@@ -113,19 +113,19 @@ class _ProjectsState extends State<Projects> {
                     builder: (context, snapshot) {
                       if (snapshot.connectionState == ConnectionState.done) {
                         return ProjectAdapter(
-                          ProjectName: "Tic Tac Toe",
-                          ProjectLogoPath: '',
+                          ProjectName: "tensorflowjs-object-detection",
+                          ProjectLogoPath:
+                              'assets/images/object-detection-illustration.png',
                           ProjectDescription:
-                              "'Tic Tac Toe' is a flutter application using BackTracking MinMax Algorithm .\n Here We can play with computer as well as human .",
+                              "Detection of objects in the browser with tensorflowjs.",
                           ProjectDescriptionForMobile:
-                              "'Tic Tac Toe' is a flutter application using BackTracking MinMax Algorithm .\n Here We can play with computer as well as human .",
-                          FirstTechnology: ' Flutter ',
-                          SecondTechnology:
-                              ' , Algorithm (BackTrcking Minmax) ',
-                          ThirdTechnology: ' , Dart',
-                          ForthTechnology: ' , Github  , Firebase',
+                              "Detection of objects in the browser with tensorflowjs.",
+                          FirstTechnology: ' Tensorflowjs ',
+                          SecondTechnology: ' , Javascript ',
+                          ThirdTechnology: ' , Html',
+                          ForthTechnology: ' , CSS',
                           ProjectUrl:
-                              "https://github.com/iamsouviki/tictactoe_game",
+                              "https://gitlab.com/gfrancos/tensorflowjs-object-detection",
                         );
                       }
                       return Container();
@@ -138,18 +138,18 @@ class _ProjectsState extends State<Projects> {
                     builder: (context, snapshot) {
                       if (snapshot.connectionState == ConnectionState.done) {
                         return ProjectAdapter(
-                          ProjectName: "My Portfolio",
-                          ProjectLogoPath: '',
+                          ProjectName: "Compare_Faces",
+                          ProjectLogoPath: 'assets/images/stock-1.jpg',
                           ProjectDescription:
-                              "'My Portfolio' is a flutter web application . Its just a web resume",
+                              "Project that extracts faces from a folder and groups them by their resemblance",
                           ProjectDescriptionForMobile:
-                              "'My Portfolio' is a flutter web application .\nIts just a web resume",
-                          FirstTechnology: 'FLUTTER ',
-                          SecondTechnology: ', DART ',
-                          ThirdTechnology: ', FIREBASE ',
-                          ForthTechnology: ', GITHUB',
+                              "Project that extracts faces from a folder and groups them by their resemblance",
+                          FirstTechnology: 'PYTHON ',
+                          SecondTechnology: '',
+                          ThirdTechnology: '',
+                          ForthTechnology: '',
                           ProjectUrl:
-                              "https://github.com/iamsouviki/souvikportfolio",
+                              "https://gitlab.com/gfrancos/compare_faces",
                         );
                       }
                       return Container();
@@ -162,18 +162,65 @@ class _ProjectsState extends State<Projects> {
                     builder: (context, snapshot) {
                       if (snapshot.connectionState == ConnectionState.done) {
                         return ProjectAdapter(
-                          ProjectName: "Expense Manager",
-                          ProjectLogoPath: '',
+                          ProjectName: "RPIZero_Security_Camera",
+                          ProjectLogoPath: 'assets/images/cctv-camera_blog.jpg',
                           ProjectDescription:
-                              "'Expense Manager' is a Python GUI tikinter Based application , \nwhich is developed to keep tracking on daily expenses and as well as we can save money for predefine expenses\n which will help for future investment . ",
+                              "Local streaming project with motion detector and telegram notifications.",
                           ProjectDescriptionForMobile:
-                              "'Expense Manager' is a Python GUI tikinter Based application , \nwhich is developed to keep tracking on daily expenses and \nas well as we can save money for predefine expenses\n which will help for future investment .",
-                          FirstTechnology: '',
-                          SecondTechnology: 'PYTHON',
-                          ThirdTechnology: ' , SQLite',
+                              "Local streaming project with motion detector and telegram notifications.",
+                          FirstTechnology: 'PYTHON',
+                          SecondTechnology: 'Javascript',
+                          ThirdTechnology: ' , HTML',
+                          ForthTechnology: 'CSS',
+                          ProjectUrl:
+                              "https://gitlab.com/gfrancos/rpizero_security_camera",
+                        );
+                      }
+                      return Container();
+                    }),
+                SizedBox(
+                  height: 70,
+                ),
+                FutureBuilder(
+                    future: count(5),
+                    builder: (context, snapshot) {
+                      if (snapshot.connectionState == ConnectionState.done) {
+                        return ProjectAdapter(
+                          ProjectName: "Masked faces",
+                          ProjectLogoPath: 'assets/images/mask.jpeg',
+                          ProjectDescription:
+                              "Program that puts masks on people's faces.",
+                          ProjectDescriptionForMobile:
+                              "Program that puts masks on people's faces.",
+                          FirstTechnology: 'PYTHON',
+                          SecondTechnology: '',
+                          ThirdTechnology: '',
                           ForthTechnology: '',
                           ProjectUrl:
-                              "https://github.com/iamsouviki/ExpenseManager",
+                              "https://gitlab.com/gfrancos/masked-faces",
+                        );
+                      }
+                      return Container();
+                    }),
+                SizedBox(
+                  height: 70,
+                ),
+                FutureBuilder(
+                    future: count(5),
+                    builder: (context, snapshot) {
+                      if (snapshot.connectionState == ConnectionState.done) {
+                        return ProjectAdapter(
+                          ProjectName: "Heatmap",
+                          ProjectLogoPath: 'assets/images/heatmap.jpeg',
+                          ProjectDescription:
+                              "Project to generate heat maps through a video or streaming.",
+                          ProjectDescriptionForMobile:
+                              "Project to generate heat maps through a video or streaming.",
+                          FirstTechnology: 'PYTHON',
+                          SecondTechnology: '',
+                          ThirdTechnology: '',
+                          ForthTechnology: '',
+                          ProjectUrl: "https://gitlab.com/gfrancos/heatmap",
                         );
                       }
                       return Container();

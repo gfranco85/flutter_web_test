@@ -30,7 +30,7 @@ const String WHO_AM_I =
 
 //EDUCATION
 const String DEGREE =
-    "Engineering in Computer Science & Engineering ( 2009-2013 ) ";
+    "Engineering in Computer Science & Engineering ( 2009-2014 ) ";
 const String COLLEGE_NAME = "Escuela Superior Politecnica del Litoral";
 const String CGPA = "DGPA :- 8.22";
 
@@ -42,15 +42,18 @@ const String TENTH_PERCENTAGE = "";
 
 //SKILLS
 const Skills = [
-  "JAVA",
-  "ReactJs",
+  "Java",
+  "Nodejs",
   "Flutter",
   "Android",
   "ExpressJS",
-  "PYTHON ( Programming )",
+  "Python ( Programming )",
   "Git",
   "Node RED",
-  "Mysql"
+  "Mysql",
+  "Spring Boot",
+  "MongoDB",
+  "SQL SERVER"
 ];
 
 //Experiences
