@@ -145,7 +145,7 @@ class _IntroDuctionAnimationTextAdapterState
                       ),
                       onPressed: () {
                         launch(
-                            "https://docs.google.com/document/d/0BxULScNDEAwfRnI4dC1GZnROQVVjel9jTlVuMEpmNXRmcXRj/edit?usp=sharing&ouid=113908384930778325018&resourcekey=0-SBX_dkjMRzmmco9s1DOSUQ&rtpof=true&sd=true");
+                            "https://drive.google.com/file/d/1_J8EaGhI_mjFpdFMrhuDqs6fs6tkX6WD/view?usp=share_link");
                       },
                     ),
                   );
